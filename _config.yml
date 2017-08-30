@@ -1,0 +1,15 @@
+title: OmniROM Blog
+email: omniromorg@gmail.com
+description: Omni is about innovation, new features, transparency, community, and freedom.
+baseurl: ""
+url: ""
+#paginate: 3
+
+markdown:  redcarpet
+highlighter: pygments
+
+# Permalinks
+permalink:  pretty
+
+# Custom vars
+#plugins:  [jekyll-paginate]
