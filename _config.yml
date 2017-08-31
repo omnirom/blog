@@ -1,14 +1,15 @@
 title: OmniROM Blog
 email: omniromorg@gmail.com
-description: Omni is about innovation, new features, transparency, community, and freedom.
+description: 'Omni is about innovation, new features, transparency, community, and freedom.'
 baseurl: "/"
 url: "https://blog.omnirom.org"
 twitter_username: omni_rom
 github_username:  omnirom
-#paginate: 3
+paginate: 5
 
-markdown:  redcarpet
-highlighter: pygments
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
 # Permalinks
 permalink:  pretty
@@ -16,3 +17,10 @@ permalink:  pretty
 
 # Custom vars
 #plugins:  [jekyll-paginate]
+include: _redirects
+
+plugins:
+  - jekyll-paginate
+  - redcarpet
+  - jekyll-gist
+  - pygments.rb

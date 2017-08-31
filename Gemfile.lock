@@ -19,8 +19,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-archives (2.1.1)
-      jekyll (>= 2.4)
     jekyll-gist (1.4.1)
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
@@ -63,7 +61,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-archives
   jekyll-gist
   jekyll-paginate
   pygments.rb
