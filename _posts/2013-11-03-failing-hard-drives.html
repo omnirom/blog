@@ -1,0 +1,49 @@
+---
+layout: post
+title: Ever Wonder What a Failing Hard Drive Sounds Like?
+date: 2013-11-03 12:28:27.000000000 -06:00
+type: post
+published: true
+status: publish
+categories:
+- General
+- Outage
+tags:
+- gerrit
+meta:
+  _edit_last: '2'
+  _jd_tweet_this: 'yes'
+  _jd_twitter: 'New post: Update on Gerrit issue #url# #tags#'
+  _wp_jd_goo: http://goo.gl/16ihS6
+  _wp_jd_target: http://omnirom.org/failing-hard-drives/
+  _jd_wp_twitter: 'a:1:{i:0;s:61:"New post: Update on Gerrit issue http://goo.gl/16ihS6
+    #gerrit";}'
+author:
+  login: jerdog
+  email: jerdog@xda-developers.com
+  display_name: jerdog
+  first_name: ''
+  last_name: ''
+---
+<p><img class="aligncenter" alt="" src="{{ site.baseurl }}/assets/colbert-3.gif" width="500" height="230" /></p>
+<p>"click-click-click-click"</p>
+<p>More to the point, that's the sound of a HDD failure on a third party server we were using for our <a href="https://gerrit.omnirom.org/" target="_blank">Gerrit</a> instance. We were able to restore to a backup but it was not as recent as we would have liked. So if you have submitted, unmerged changes since October 18, and still have them locally, here is what you can do:</p>
+<ol>
+<li>Navigate to your working omni folder, i.e. ~/android/omni</li>
+<li>Run 'repo status' to see the list of projects you were working on and their locations</li>
+<li>Navigate to the location of the repo you want to repush</li>
+<li>Type 'git log' and note the commit hash (sha1) you want</li>
+<li>Navigate back to your working omni folder</li>
+<li>Type 'repo start &lt;<i>branchName&gt; &lt;directoryOfPackageChanged&gt;'<br />
+(<strong>NOTE: it is important to use relative path names to where you are in your repo)</strong><br />
+</i></p>
+<ul>
+<li>EXAMPLE: <strong><strong>repo start bootAnimation vendor/omni</strong></strong></li>
+</ul>
+</li>
+<li>Navigate to the directory</li>
+<li>Type 'git cherry-pick &lt;sha1_noted_before&gt;'</li>
+<li>Now type 'repo upload'</li>
+</ol>
+<p>You should be good to go. We have already put plans and hardware in place to ensure this does not happen again, and Gerrit should return within the next hour or so once DNS changes propogate. Now here's to <a title="Of Jelly Beans and KitKats" href="http://omnirom.org/jelly-beans-kitkats/">making more bacon</a>!</p>
+<p>&nbsp;</p>

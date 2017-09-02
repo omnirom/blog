@@ -1,0 +1,38 @@
+---
+layout: post
+title: Gerrit Getting You Down?
+date: 2013-11-04 19:53:34.000000000 -06:00
+type: post
+published: true
+status: publish
+categories:
+- General
+- Process
+tags:
+- gerrit
+- omnirom
+- wiki
+meta:
+  _yoast_wpseo_linkdex: '81'
+  _edit_last: '2'
+  _yoast_wpseo_focuskw: gerrit
+  _jd_tweet_this: 'yes'
+  _wp_jd_goo: http://goo.gl/gBs5lx
+  _wp_jd_target: http://omnirom.org/gerrit-getting-you-down/
+  _jd_wp_twitter: 'a:1:{i:0;s:109:"New post: Gerrit Getting You Down? Gerrit getting
+    you down? Don''t http://goo.gl/gBs5lx #gerrit #omnirom #wiki";}'
+  _thumbnail_id: '318'
+author:
+  login: jerdog
+  email: jerdog@xda-developers.com
+  display_name: jerdog
+  first_name: ''
+  last_name: ''
+---
+<p><a href="https://gerrit.omnirom.org" target="_blank">Gerrit</a> getting you down? Don't worry, we know it can be a bit annoying to get Gerrit working properly to make contributions, but we've made a list of the top 5 reasons for Gerrit giving you problems when submitting changes. You should check these in order from 1 to 5, and you'll be contributing in no time!</p>
+<p>1) Have you set a username within Gerrit? Log into the Gerrit interface, and select your name at the top right. Click Settings, and ensure a username is set correctly there.</p>
+<p>2) Have you configured your local repo client to use the correct Gerrit username? Our wiki <a href="http://docs.omnirom.org/Using_repo_and_git#Troubleshooting" target="_blank">has instructions</a> on how to do this.</p>
+<p>3) Are you contributing from a secured business connection? Some businesses employ SSL sniffing, and will block connections to unknown HTTPS websites, for information security purposes. This mainly affects military and defense company networks. We are looking into possible solutions such as permitting HTTP access for such users (without SSL), but for now it is not possible to upload contributions without SSL access. This is for your own security.</p>
+<p>4) Have you accepted the CLA? In the <a title="Ever Wonder What a Failing Hard Drive Sounds Like?" href="http://omnirom.org/failing-hard-drives/" target="_blank">recent downtime</a>, we enabled the Omni CLA. There's more information about this agreement available yet again on the <a href="http://docs.omnirom.org/Omni_Contributor_License_Agreement" target="_blank">wiki</a>. In order to accept the CLA, you should log into the web interface of Gerrit, select your name at the top right, select Settings, and then choose Agreements. You can also access it directly by browsing to the <a href="https://gerrit.omnirom.org/#/settings/new-agreement" target="_blank">submission page</a>.</p>
+<p>5) If you are receiving errors about Change IDs, you should ensure that the Change ID line is the last line of the git commit that does not begin with a comment symbol (#). To make this process easier, you can also install the git hook, which will automatically add a commit ID onto each commit. The instructions for this are given during the error message when the commit fails for this reason.</p>
+<p>If you are still having issues after following the above, maybe now is a good time to drop into our <a href="http://webchat.freenode.net/?channels=omnirom" target="_blank">IRC channel</a>?</p>

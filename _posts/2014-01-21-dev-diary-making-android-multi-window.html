@@ -1,0 +1,80 @@
+---
+layout: post
+title: 'Dev Diary: Making Android Multi-Window'
+date: 2014-01-21 06:00:36.000000000 -06:00
+type: post
+published: true
+status: publish
+categories:
+- Development
+- Features
+tags:
+- android
+- multi-window
+- omni
+meta:
+  _yoast_wpseo_linkdex: '86'
+  _edit_last: '2'
+  _et_single_bg_image: ''
+  _format_video_embed: ''
+  _jd_tweet_this: 'yes'
+  _thumbnail_id: '468'
+  _yoast_wpseo_focuskw: Multi-window
+  _wp_jd_goo: http://goo.gl/p11H4V
+  _wp_jd_target: http://omnirom.org/features/dev-diary-making-android-multi-window/
+  _jd_wp_twitter: 'a:1:{i:0;s:132:"New post: Dev Diary: Making Android Multi-Window
+    “Android isn’t made for multi http://goo.gl/p11H4V #android #multi-window #omni";}'
+  _wpt_failed: 'a:5:{s:6:"author";b:0;s:8:"sentence";s:132:"New post: Dev Diary: Making
+    Android Multi-Window “Android isn’t made for multi http://goo.gl/p11H4V #android
+    #multi-window #omni";s:5:"error";s:71:"This tweet is identical to another Tweet
+    recently sent to this account.";s:4:"code";i:403;s:9:"timestamp";i:1390284049;}'
+author:
+  login: xplodwild
+  email: xplodgui@gmail.com
+  display_name: xplodwild
+  first_name: ''
+  last_name: ''
+---
+<p dir="ltr" style="text-align: center;"><em><strong>“Android isn’t made for multi-window”</strong><br />
+</em></p>
+<p dir="ltr">You've probably heard that statement, or some like it, when discussions turn to multi-window on Android. However we have seen it done quite nicely on Samsung's TouchWiz, Sony's Quick Apps, and more. So yes, technically, it’s possible. Now the <em>real</em> question is: How to make that look good on Android, on small screens (yes, for me a tablet is still a small screen), and most importantly, how to render it useful and valid from an UX point of view.</p>
+<p><span style="line-height: 1.5em;">I’ve been working, as part of Omni, on an </span>experimental<span style="line-height: 1.5em;"> multi-window (“split view”) implementation, but the first results weren’t quite up to my original expectations, so I decided to rethink part of the concept to make it fit better. </span>As many people can’t wait to really experience a truly working multi-window, I’d love to share with you some of the thoughts that went into our work, and the reasons behind some of the choices we have made.</p>
+<p dir="ltr"><strong>0). The constraints of the Android platform.</strong></p>
+<p dir="ltr">As an open-source AOSP modification, we had to set ourselves a few constraints, thinking about the future:</p>
+<ul>
+<li><strong>Code changes should be minimal:</strong> As we want to upgrade Omni to each major (and minor) Android release as quick as possible, we must ensure we’re not changing too much of the platform’s architecture. (unless this gets approved by Google and we make a more solid implementation that gets maintained forever into AOSP)</li>
+<li><span style="line-height: 1.5em;"><strong>Barely any app must require changes:</strong> The #1 goal we set is that apps should be able to run as-is, without changes in multi-window (though we can provide optional extra features for developers who’d like to take advantage of it). Sure, some will work better than other in that configuration - Android is made to give full-screen love to each app - but there is a winning combination of parameters and layouts that make apps work fine even without the full screen estate.</span></li>
+<li><span style="line-height: 1.5em;"><strong>No fancy stuff:</strong> It has to be functional. People should want to use it, not just to demo it to their friends, but it should help their everyday life.</span></li>
+<li><span style="line-height: 1.5em;"><strong>Keep in mind the things around:</strong> Some apps can now run in immersive mode. Some apps can have translucent navigation and status bar. Some apps force landscape. Some apps force portrait. You have to make all these events happy.</span></li>
+</ul>
+<p><strong>0bis). Advantages of the Android Patform.</strong></p>
+<ul>
+<li>Apps are designed for various screen sizes: Android devices exist in various shapes and sizes. Apps are already designed for them, and thus they won’t break even if they don’t have a very specific screen size.</li>
+<li><span style="line-height: 1.5em;">Android knows how to multitask: The platform handles multitasking very well, and knows when to pause apps (put them in idle, in the background). We can also control that very easily in the source code.</span></li>
+</ul>
+<p dir="ltr"><strong>1). The “floating” multi-window approach</strong></p>
+<p>[caption id="attachment_464" align="aligncenter" width="368"]<a href="http://omnirom.org/wp-content/uploads/2014/01/F3eRZci.png"><img class=" wp-image-464 " alt="September 1st 2013 - Early Omni multi-window pre-tests - Nexus 4" src="{{ site.baseurl }}/assets/F3eRZci-614x1024.png" width="368" height="614" /></a> September 1st 2013 - Early Omni multi-window pre-tests - Nexus 4[/caption]</p>
+<p dir="ltr">There are multiple multi-window implementations that you can see on the Web:</p>
+<ul>
+<li><a href="http://www.youtube.com/watch?v=1ltxfMCNlNc">http://www.youtube.com/watch?v=1ltxfMCNlNc</a>, and</li>
+<li><a href="http://www.youtube.com/watch?v=FfR1Jvyin0Y">http://www.youtube.com/watch?v=FfR1Jvyin0Y</a> and no that’s not an iPad)</li>
+</ul>
+<p>and there’s one thing that I totally agree with: it’s bad ass to demo but let’s face it, it’s not practical. You don’t want to have to mess around with moving windows, dragging them, and reorganizing them every time you want to do an action. It has to be natural to move between apps, and returning to a full screen state must be easy. You shouldn’t be worrying about resizing your window, or learning complex gestures to make special menus appear.</p>
+<p dir="ltr">Having full-fledged apps in floating windows was definitely not the way to go.</p>
+<p dir="ltr"><strong>2). The “split-view” layout</strong></p>
+<p dir="ltr">From the previous observations, splitting the screen in two seems like the best idea. No need to deal with multiple windows/workspaces - just open an app on the side of the screen - and you can just play with both apps on your screen. Input would be routed to the last tapped app, and the virtual keyboard would come up and resize both apps. Apps running in forced-portrait or forced-landscape mode would be forced to use user-defined rotation (accelerometer), and would have to deal with the space they’re given (well we have to make compromises).</p>
+<p style="text-align: center;"><a href="https://lh6.googleusercontent.com/-sOBQAGfm3Z8/Up2CcdQLCTI/AAAAAAAAQB4/6gML2jUZ36A/w1050-h656-no/13+-+1"><img class="aligncenter" alt="" src="{{ site.baseurl }}/assets/13+-+1" width="630" height="394" /></a></p>
+<p dir="ltr"><span style="line-height: 1.5em;">This seemed to be the best option we had so far, until we had to think about: </span></p>
+<ol>
+<li>How would we deal with navigation?</li>
+<li>How would we make switching between apps easier?</li>
+</ol>
+<p dir="ltr">Back then, our solution was to alternate between the left and right slots every time you’d use the “Add to split view” option, keeping the same slot for the same app. However this wasn’t a good solution, as the position would be unpredictable, and sometimes two apps would overlap on the same spot. Also, we ended up with a mixed behavior when pressing the Back button until an app would totally close (do we restore the previous splitted app? Do we resize the remaining app to fullscreen?)</p>
+<p><strong>3). The “stacked split view” layout</strong></p>
+<p dir="ltr">A few days ago, we stumbled upon some <a href="http://goo.gl/XtblUx" target="_blank">WebOS article</a> that turned out to give us the solution to our previous “side-management” problem. It’s so simple, yet had to be thought about: stacking apps on the side, instead of having two slots.</p>
+<p dir="ltr">On the visual point of view, we still have two apps running side-by-side, except we now consider one app being the “main” app (on the left), and one (or multiple) other apps stacked on the side. Only two apps max are running at a time, and the paused apps in the stack are “folded” underneath the running app.</p>
+<p dir="ltr">For those who don't remember, WebOS was the brainchild of Matias Duarte who was responsible for the UX design before moving to Android just in time for Gingerbread's release in late 2010. After joining Google, you started to see Duarte's influence come out a little bit in Honeycomb and finally realized in Android 4.x. With a certain look like WebOS, I started making this first concept video:</p>
+<p dir="ltr" style="text-align: center;"><iframe src="//www.youtube.com/embed/u5_eKo6Jbzk?rel=0" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+<p>Now we’re talking. Now we can switch easily between multiple apps, have them on the side, just two taps away from being the front app. The one issue with this video concept is that we overlap the “front” apps with the folded apps. We fixed that by simply moving forward (as in, depth) the app we move to the front, and make the previously front app “folded” under this new front app, adjusting the size of the app so that nothing overlaps (or barely).</p>
+<p dir="ltr">With that said, and all experimentations done, it looks like we have a fairly solid “multi-window” concept for Android.  We’re still looking at edge cases, and we’re looking at all possible actions that may occur (though we have a pretty good list from those who tested our existing multi-window patch already), to make sure we haven’t forgotten anything.</p>
+<p>I’ll be working in the coming days on updating my existing multi-window patch to this new layout/concept, and keep an eye on user reports if we missed anything.</p>

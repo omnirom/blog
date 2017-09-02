@@ -1,0 +1,61 @@
+---
+layout: post
+title: Tips to Getting Your Code Merged
+date: 2014-02-10 20:42:34.000000000 -06:00
+type: post
+published: true
+status: publish
+categories:
+- Development
+- Features
+- General
+tags:
+- code
+- development
+- gerrit
+- omnirom
+meta:
+  _yoast_wpseo_linkdex: '90'
+  _edit_last: '2'
+  _et_single_bg_image: ''
+  _format_video_embed: ''
+  _jd_tweet_this: 'yes'
+  _thumbnail_id: '529'
+  _yoast_wpseo_focuskw: Code
+  _wp_jd_goo: http://goo.gl/Sc9EVi
+  _wp_jd_target: http://omnirom.org/general/tips-getting-code-merged/
+  _jd_wp_twitter: 'a:1:{i:0;s:121:"New post: Tips to Getting Your Code Merged [Note:
+    the below is adapted fr http://goo.gl/Sc9EVi #code #development #gerrit";}'
+  _yoast_wpseo_metadesc: While we have previously have included on the wiki a few
+    notes about contributing to Omni, here are just a few observations regarding Omni
+    code contribution
+author:
+  login: jerdog
+  email: jerdog@xda-developers.com
+  display_name: jerdog
+  first_name: ''
+  last_name: ''
+---
+<p><em><img class="alignright size-full wp-image-529" alt="code" src="{{ site.baseurl }}/assets/code.png" width="180" height="160" />[Note: the below is adapted from a <a href="https://plus.google.com/+AndrewDodd/posts/SMZ3sFMaLGU">post on Google+</a> by one of Omni's Lead Developers, Andrew Dodd aka Entropy512.] </em></p>
+<p>While we have previously have included on the wiki <a href="http://docs.omnirom.org/Getting_Involved" target="_blank">a few notes</a> about <a href="http://docs.omnirom.org/Contributing_code" target="_blank">contributing</a> to Omni, here are just a few observations regarding Omni code contribution, and some tips on getting your stuff merged:</p>
+<ol>
+<li>Indicate in the review comments what a patch is supposed to fix and, ideally, how to reproduce the problem or test the patch.  We personally hate blind-merging stuff that hasn't been tested to actually do something.
+<ul>
+<li>If it's device-specific, indicate what issue on that device it's supposed to fix.</li>
+<li>If it's a cherry-pick from elsewhere, DO NOT edit the commit message.  Just put in a review comment after uploading.</li>
+</ul>
+</li>
+<li><span style="line-height: 1.5em;">If you put a patch up and don't add reviewers with merge rights, it's probably not going anywhere. </span>
+<ul>
+<li>Unfortunately it can sometimes be difficult to tell who to add to review. A safe bet is to add a few people from the <a title="Contributors" href="http://omnirom.org/contributors/" target="_blank">Contributors</a> list.</li>
+</ul>
+</li>
+<li><span style="line-height: 1.5em;">If you put up a lot of patches at once, you might overload the reviewers.  If you put up a lot of patches that don't actually depend on each other into a gerrit dependency chain, you're going to cause massive delays if some of your patches are good but one of the earlier patches has issues.  </span>
+<ul>
+<li>As an example, right now there's a good patch which is marked as having a dependency on a completely broken one that breaks the build.  The patch doesn't actually depend on the other one and should have been put into a separate topic branch when it was uploaded so it could be merged on its own.</li>
+</ul>
+</li>
+<li><span style="line-height: 1.5em;">DO NOT put someone else's existing patch into a dependency chain after one of your own patches without talking to them or catching one of those with merge rights on IRC.  Seriously, just do NOT do it.  Someone mass-submitted 30+ patches to Gerrit all at once two weeks ago, and took other people's patches and inserted them at the end of the dependency chain.  Many of that submitter's patches were questionable/high-risk so it delayed the less-risky patches.</span></li>
+</ol>
+<p><span style="line-height: 1.5em;">Regarding PM's on <a href="http://webchat.freenode.net/?channels=omnirom" target="_blank">IRC</a>: Please do not PM a developer without first pinging them in a public channel to see if they're there.  Also, when asking if you can PM them, ask yourself, "does this really need to be private"? Most of the things people contact developers about don't need to be a PM, and if they ping them when they're asleep, they won't be helped while someone else could have helped them in IRC.  Plus one of the biggest goals of Omni is transparency with developers and users, so it's better if conversations occur in public unless they REALLY have a good reason to be private.</span></p>
+<p><em>Image courtesy of RocketModule</em></p>

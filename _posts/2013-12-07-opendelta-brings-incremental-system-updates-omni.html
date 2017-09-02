@@ -1,0 +1,45 @@
+---
+layout: post
+title: OpenDelta Brings Incremental System Updates to Omni
+date: 2013-12-07 18:21:38.000000000 -06:00
+type: post
+published: true
+status: publish
+categories:
+- Features
+- General
+tags:
+- chainfire
+- omnirom
+- opendelta
+- ota
+- twrp
+meta:
+  _edit_last: '2'
+  _thumbnail_id: '369'
+  _et_single_bg_image: ''
+  _format_video_embed: ''
+  _jd_tweet_this: 'yes'
+  _wp_jd_goo: http://goo.gl/nLkQb9
+  _wp_jd_target: http://omnirom.org/general/opendelta-brings-incremental-system-updates-omni/
+  _wpt_failed: 'a:5:{s:6:"author";b:0;s:8:"sentence";s:140:"New post: OpenDelta Brings
+    Incremental System Updates to Omni One of the core tenants of http://goo.gl/nLkQb9
+    #chainfire #omnirom #opendelta";s:5:"error";s:204:"403 Forbidden: The request
+    is understood, but has been refused by Twitter. Possible reasons: too many Tweets,
+    same Tweet submitted twice, Tweet longer than 140 characters. Not an error from
+    WP to Twitter.";s:4:"code";i:403;s:9:"timestamp";i:1386440513;}'
+author:
+  login: jerdog
+  email: jerdog@xda-developers.com
+  display_name: jerdog
+  first_name: ''
+  last_name: ''
+---
+<p>One of the core tenants of Omni was that we wouldn't just add a feature to the project without it being value-added and Open Source. This allows our focus to stay community-driven and encourage others to contribute to and benefit from the project.</p>
+<p>We all love to get those updates to our devices, but sometimes it becomes tedious to get an update that is 100MB+ over non-WiFi connections, or some of you start to get the jitters if you have to wait to download that new version. To that end, and because we needed a reliable update system built into the project, <a href="http://google.com/+Chainfire">Chainfire</a> set out to create OpenDelta.</p>
+<p>OpenDelta provides automatic OTA updates for nightly builds, making use of deltas when possible, to reduce the size of the download using binary differentials (VCDIFF, RFC 3284) between the previous and the current release, courtesy of <a href="http://xdelta.org/">xdelta3</a>. The produced delta files are pushed to the public download server, and the current build is saved to a private location to serve as input for the next differential run.</p>
+<p>The Android client periodically checks in with the download server and retrieves the <em>.delta</em> file for its current build. After parsing it, it knows the name for the next build as well, and then the one after that, etc. So if you don't update for a number of builds, it can still reconstruct the latest build by chaining the deltas. It will check each delta if we already have intermediate files present - perhaps we already performed the work for the last build but never flashed it, for example. Based on all this information it will instruct the device to either reconstruct the final flashable ZIP, or just download the latest full OTA and flash that via recovery.</p>
+<p><strong>It is important to note that <a href="http://www.teamw.in/project/twrp2">TWRP</a> is currently the only recovery recommended or supported through Omni. </strong></p>
+<p>You can access OpenDelta via the System Updates menu found in the About menu of System Settings. There's also a menu option where you can identify which networks you approve for OpenDelta to automatically check for updates.</p>
+<p>[gallery link="file" ids="372,371,370"]</p>
+<p>OpenDelta is currently still under development and is bound to run into some snags due to a broad range of devices and their respective differences, but if you want to use this with your own project or fork and improve and then contribute back, the repo is located on <a href="https://github.com/omnirom/android_packages_apps_OpenDelta">Omni's github</a>. Make sure that if you do decide to fork and use for your own projects, that you follow the license which is <a href="http://www.gnu.org/licenses/quick-guide-gplv3.html">GPLv3</a>.</p>

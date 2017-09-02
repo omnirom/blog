@@ -1,0 +1,91 @@
+---
+layout: post
+title: Spring 2017 Omni Updates
+date: 2017-03-31 19:18:05.000000000 -05:00
+type: post
+published: true
+status: publish
+categories:
+- Development
+- Features
+- General
+tags:
+- android-7.1
+- omnirom
+- spring
+- substratum
+- updates
+meta:
+  _edit_last: '2'
+  _et_single_bg_image: ''
+  _format_video_embed: ''
+  _yoast_wpseo_content_score: '90'
+  _jd_tweet_this: 'yes'
+  _yoast_wpseo_primary_category: '26'
+  _thumbnail_id: '904'
+  _wpt_short_url: https://goo.gl/N0yNf7
+  _wp_jd_target: https://goo.gl/N0yNf7
+  _jd_wp_twitter: 'a:1:{i:0;s:117:"New post: Spring 2017 Omni Updates Spring is all
+    about the old dy https://goo.gl/N0yNf7 #android-7.1 #omnirom #spring";}'
+  _wpt_status_message: Tweet sent successfully.
+author:
+  login: jerdog
+  email: jerdog@xda-developers.com
+  display_name: jerdog
+  first_name: ''
+  last_name: ''
+---
+<p>Spring is all about the old dying out and new life coming - which for us means there are a number of new things happening at Omni. We've been working on features, added new devices, and even had new people join the team. So let's get right to it shall we?</p>
+<h2>Features</h2>
+<p>At Omni we have always been about adding solid features which enhance the experience while still giving the user control, while also not just adding them for the sake of adding. There's a purpose to everything we do.</p>
+<h3>Music</h3>
+<p><span style="font-weight: 400;">After searching for a solid replacement to the solid Apollo, which has been on minimal life support for a while now, we've decided to base on the GPLv3-licensed <a href="https://github.com/kabouzeid/Phonograph" target="_blank"><strong>Phonograph</strong></a>. We feel that it is a good base for the time to come and will allow for us to add new features which will benefit the community as a whole. </span><span style="font-weight: 400;">Oshmoun did a great job in getting it setup to build with the ROM but still allows for using Android Studio for development.</span></p>
+<h3>Wallpapers, Header Packs, and More</h3>
+<p><span style="font-weight: 400;">We began a new project recently called <strong><a href="https://gerrit.omnirom.org/#/c/21566/" target="_blank">OmniStyle</a></strong> which allowed for styling the status bar headers, and now we've added functionality to allow wallpapers to be "styled" as well. </span>We have added a new wallpaper picker <a href="https://github.com/omnirom/android_packages_apps_OmniStyle/blob/android-7.1/src/org/omnirom/omnistyle/BrowseWallsActivity.java" target="_blank">activity</a> into OmniStyle and then also integrated it into Settings under the Style section. We are searching for new contributions to wallpapers, header packs, boot animations, and sounds which exhibit the Omni branding as well as an Omni theme (more on that later). If you want to contribute wallpapers, you can do so in our <a href="https://plus.google.com/communities/102450203113748251717" target="_blank">G+ community</a>.</p>
+<p>We'd also like to thank the following for their contributions so far:</p>
+<ul>
+<li>Custom sound contributions from <span style="font-weight: 400;">Vincenzo Mario Cristi (ringtones, alarms, and notifications, with system sounds to come)</span></li>
+<li>Wallpaper contributions from JayRod JP Kenji and Siddharth Gupta</li>
+<li>Header pack contributions from Travis Hall and Syed Sajid</li>
+</ul>
+<h3>OMS and Substratum</h3>
+<p>Laurent has been merging all of the commits needed to enable Omni to support OMS and Substratum, along with fixing any of the merge conflicts which could occur. There are two types of commits to look for:</p>
+<ul>
+<li><span style="font-weight: 400;">OMS, OMS 7 or more generally OMS* deals with OMS and Substratum root mode. Note that the root mode will be soon deprecated.</span></li>
+<li><span style="font-weight: 400;">OMS rootless is the same but with rootless mode. The rootless mode requires all OMS* commits + specific rootless commits.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Soon to come will be a new project, called "Proper Resources" for themers to fully customize Omni. More to come on that soon.</span></p>
+<h2>Devices</h2>
+<p>We have added the following new devices:</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Samsung Galaxy Tab S2 (T813) [gts210vewifi]</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Sony Xperia X Compact [kugo]</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Sony Xperia X [suzu]</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Sony Xperia Z3 [leo]</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">LeEco LePro3 [le_zl1]</span></li>
+</ul>
+<p>Thanks for the joint efforts of Scanno, Kldoc, and Maxwen we have begun official, weekly, unified builds of Omni 7 for the OnePlus 3 and 3T.</p>
+<p><span style="font-weight: 400;">Jakew02 has been hard at work on the following:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Nexus 6 (shamu) added to official weeklies</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Robin: is NOW 100% stable after recent fixes and extensive testing. Latest weekly build with boast fully updated base to latest CAF tag, as well as fixed final remaining bugs and adding several new Omni-specific bits:</span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Tethering is now globally fixed (USB, WiFi (secure/insecure/2.4GHz/5GHz) and BT)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">SnapdragonCamera is back</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Audio fixes and tuneups</span></li>
+</ul>
+</li>
+</ul>
+<p>Hardslog reports that:</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Nexus 9 (flounder) added to official weeklies after he caused many headaches to Maxwen (and has been dealt with appropriately)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Nexus 7 2013 (flo) in progress.  Camera fixes and sepolicy fixes needed</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">He needs/wants help with the Oneplus2 bring-up.  So far it builds and boots and he is seeing Wi-fi, bluetooth and camera working - but advanced camera features do not. Help him out please? </span></li>
+</ul>
+<h2>People</h2>
+<p><span style="font-weight: 400;">We would like to welcome the following people to the team:</span></p>
+<ul>
+<li><span style="font-weight: 400;"><strong>Laurent</strong> - </span>an android fan boy who likes open source, design and coding stuffs. He is a daily user of, and tests on, the OP3 (mainly) and the Find7op.</li>
+<li><strong>Diewi </strong>- studied electrical engineering and currently works at a computer science research institute and likes open source software. After contributing to the Sony Open Devices program, he joined the Omni Sony maintainer team (Z2 and eventually Z1 &amp; Z2 Tablet).</li>
+</ul>
+<p>And that's it for now. Thanks for all of your support!</p>

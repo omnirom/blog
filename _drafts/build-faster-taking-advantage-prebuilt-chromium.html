@@ -1,0 +1,38 @@
+---
+layout: post
+title: Build Faster By Taking Advantage of Prebuilt Chromium
+date: 
+type: post
+published: false
+status: pending
+categories:
+- android-4.4
+- Development
+- Features
+tags:
+- android-4.4
+- chromium
+- compiling
+meta:
+  _edit_last: '2'
+  _et_single_bg_image: ''
+  _format_video_embed: ''
+  _jd_twitter: ''
+  _jd_tweet_this: 'yes'
+  _yoast_wpseo_focuskw: chromium
+  _yoast_wpseo_linkdex: '86'
+  _yoast_wpseo_metadesc: The Chromium engine in Android KitKat had been drastically
+    increasing build times. Omni looks at using prebuilt Chromium binaries to resolve
+    said issue.
+  _thumbnail_id: '780'
+author:
+  login: jiangyi
+  email: sam.andrew.jiang@gmail.com
+  display_name: Jiangyi
+  first_name: Andrew
+  last_name: Jiang
+---
+<p>Long-time ROM builders might have noticed that their build times have increased by a significant amount ever since the rollout of Android 4.4 KitKat. This has been attributed to Google's decision to replace the old WebKit engine in favour of the Chromium engine in AOSP.</p>
+<p>Chromium has a bad habit of rebuilding itself every time a build is launched, even on non-clean builds where no changes were made to it. This is a problem, as it is a relatively large library and CCache does not seem to help it move along any faster during the build process, causing frustration to builders as it sometimes takes up more than 50% of compile time.</p>
+<p>Here at Omni, we feel this pain on our build servers every night, waiting for Chromium to build again, and again, and again... on every single device, resulting in a waste of CPU cycles, energy, and time. Time that we could be using to get nightlies and delta updates to you. Therefore, our <a href="http://omnirom.org/contributors/">community member</a> Andrew Jiang (Jiangyi) has kindly stepped up and uploaded a set of <a href="https://gerrit.omnirom.org/#/q/topic:PrebuiltChromium+status:merged,n,z">prebuilt Chromium patches</a> onto our <a href="https://gerrit.omnirom.org">Gerrit instance</a> that should help alleviate the issue.</p>
+<p>These patches are opt-in, and the functionality is triggered by setting <em>USE_PREBUILT_CHROMIUM=1</em> in your build environment. After doing so, it will automatically pull the Chromium binaries for your device the next time you launch a full build, and store them in prebuilts/chromium in your build tree. These will then be used for every subsequent build you launch for your device (Provided that there are no changes to the Chromium codebase), thus saving you precious time! If there are changes to the codebase, it will ignore the prebuilts, rebuild from source, and replace the old prebuilts with the newly compiled, up-to-date ones.</p>

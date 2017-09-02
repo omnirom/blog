@@ -1,0 +1,42 @@
+---
+layout: faq
+title: Multiuser on phones - how do you plan to handle the telephony problem? One
+  of the big problems ran into is carriers who use single-sign-on in order to auth
+  for services on their network - which causes multiuser on phones (TMobileUS)
+date: 
+type: faq
+published: false
+status: draft
+categories: []
+tags: []
+meta:
+  _edit_last: '3'
+  _jd_tweet_this: 'yes'
+author:
+  login: jerdog
+  email: jerdog@xda-developers.com
+  display_name: jerdog
+  first_name: ''
+  last_name: ''
+---
+<p>This is an interesting question, and there's (in our minds), three separate levels of this problem to consider - the handling of telephony-based communications, the handling of the telephony platform, and the handling of network related services.</p>
+<p><strong>Telephony-based Communications</strong></p>
+<p>Yup, you guessed it, telephony-based communications is another word for calls, SMS, and any other kind of user-facing messaging supported (ie. MMS). One of the challenges of multi-user on phones is how to deal with the user experience of having multiple users on the one device - when a second user is using your phone, what happens to your incoming calls and messages? Should they be delivered to your profile, or the profile currently in use? Should the current user be notified about the incoming call or SMS?</p>
+<p>This is where user choice is possible - we envisage 2 main scenarios (OK, it's actually 3, but let's keep the third until later) - someone who wants to use multiuser as a way to protect their privacy, or prevent undesired call/SMS access by a less-trusted user, and someone who is using multiuser as a convenience feature for their own use. The latter offers opportunities for someone to set up a "personal" and "work" profile on their device, to avoid receiving work emails at evenings and weekends, and avoid their social media notifications and wakelocks (looking at you Facebook) from disturbing their work.</p>
+<p>If multi-user is being used for "security", then we propose to not notify the current user of an incoming call or SMS - these would be deal with as though the user was not reachable. If a voicemail is left, it will be there for the primary user to access when they return to their profile. Likewise for SMS messages. We also imagine it being possible to inhibit outbound calls and SMS in this mode (a nice safe sandbox for running sketchy apps?) As an extra, the ability to notify the user of the presence of a call or SMS (without giving details) would be possible, but a choice for the user to make.</p>
+<p>If multi-user is being used for "convenience" by the primary user of the device, they can elect to unify their data between profiles. In this situation, while call and SMS records will be stored in the primary user's account, it will be possible to receive and make calls and SMS messages while using an additional user account. An optional feature will also share the contacts between user profiles (as we imagine those without eidetic memory will appreciate knowing who is calling or messaging them).</p>
+<p><strong>The Telephony System</strong></p>
+<p>While some people do use their phone for calls and SMS (believe it or not!), Android also makes use of the telephony layer for a number of other features. For example, your 3G internet connection obviously relies upon the SIM card and associated telephony layer. On a device with multiple SIMs (more on this later), this offers additional opportunities. Some providers also have a SIM toolkit application available, to make use of embedded Java applications running on the SIM card.</p>
+<p>We envisage that for single-SIM devices, the above controls will also apply to SIM-related services. More about dual-SIM devices in the next section!</p>
+<p><strong>Network Related Services (and dual SIM devices)</strong></p>
+<p>Mobile networks... Where would we be without them? (Answer: miles ahead of where we are now). Love them or hate them, your phone has to talk to a mobile network (at least until mesh networks put them out of business in the next 50 years)! If you have a dual-SIM device, you may well have two mobile networks in use on the one phone handset. Perhaps this is to give you coverage when out of coverage from your other network, or to simply give you an additional phone number for personal calls on a business handset. No matter the reason you have chosen to use two SIMs, Omni aims to help you here. We see the following use-cases for multiple SIM devices;</p>
+<ul>
+<li>One user using 2 SIMs to enhance coverage (or one SIM for emergency use in case of network outage)</li>
+<li>One user with a personal SIM and a work SIM</li>
+<li>One user with a SIM for calls and SMS, and a separate SIM for data</li>
+<li>Multiple (well, most likely 2) users of the one shared mobile device</li>
+</ul>
+<p>What can Omni do for you in these situations?</p>
+<p>For enhancing coverage, Omni can have one of your SIMs defined as a "primary" SIM. In the event of this SIM going out of coverage (ie. inside a building or in the event of a network outage), Omni will automatically enable your second SIM. Inbound calls to your first SIM will see you as "unavailable" (and Android permits forwarding of calls to another number, such as... say... your second SIM number).</p>
+<p><strong>What about CDMA?</strong></p>
+<p>This article has mostly focused on GSM devices, as these are the most widely used throughout the world. Fear not though, for while you are unlikely to be enjoying dual-SIM devices on a CDMA network for a significant time, there's no reason you can't benefit from having multiple user profiles on your phone as described in the first section above. Although we imagine that, given the usual response of CDMA networks to any threat of innovation, all future devices will have their bootloaders locked in anticipation. Oh wait...</p>

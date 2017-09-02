@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<title>OmniROM</title>
+		<meta name="keywords" content="" />	<link rel="canonical" href="https://omnirom.org" />
+	
+	<link rel="pingback" href="https://omnirom.org/xmlrpc.php" />
+
+		<!--[if lt IE 9]>
+	<script src="https://omnirom.org/wp-content/themes/Nexus/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	
+	<style type="text/css">
+		#fancybox-close{right:-15px;top:-15px}
+		div#fancybox-content{border-color:#FFFFFF}
+		div#fancybox-title{background-color:#FFFFFF}
+		div#fancybox-outer{background-color:#FFFFFF}
+		div#fancybox-title-inside{color:#333333}
+	</style>
+
+	
+<!-- This site is optimized with the Yoast SEO plugin v5.3.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="A Community-Based Project for the Android Community"/>
+<link rel="canonical" href="https://omnirom.org/" />
+<link rel="next" href="https://omnirom.org/page/2/" />
+<link rel="publisher" href="https://plus.google.com/u/0/b/115526355605398943780/115526355605398943780"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="OmniROM - A Community-Based Project for the Android Community" />
+<meta property="og:description" content="A Community-Based Project for the Android Community" />
+<meta property="og:url" content="https://omnirom.org/" />
+<meta property="og:site_name" content="OmniROM" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="A Community-Based Project for the Android Community" />
+<meta name="twitter:title" content="OmniROM - A Community-Based Project for the Android Community" />
+<meta name="twitter:site" content="@omni_rom" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/omnirom.org\/","name":"OmniROM","potentialAction":{"@type":"SearchAction","target":"https:\/\/omnirom.org\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="OmniROM &raquo; Feed" href="https://omnirom.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="OmniROM &raquo; Comments Feed" href="https://omnirom.org/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/omnirom.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.1"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="Nexus v.1.3" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='https://omnirom.org/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jeweltheme-jquery-ui-style-css'  href='https://omnirom.org/wp-content/plugins/wp-awesome-faq/jquery-ui.css?ver=4.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://omnirom.org/wp-includes/css/dashicons.min.css?ver=4.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://omnirom.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='https://omnirom.org/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=4.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='collapseomatic-css-css'  href='https://omnirom.org/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wpt-twitter-feed-css'  href='https://omnirom.org/wp-content/plugins/wp-to-twitter/css/twitter-feed.css?ver=4.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='nexus-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,700,800|Raleway:400,200,100,500,700,800,900&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='et-gf-droid-sans-css'  href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700&#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='et-gf-ubuntu-css'  href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='nexus-style-css'  href='https://omnirom.org/wp-content/themes/Nexus/style.css?ver=4.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-css-css'  href='https://omnirom.org/wp-content/themes/Nexus/epanel/shortcodes/css/shortcodes.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css'  href='https://omnirom.org/wp-content/themes/Nexus/epanel/shortcodes/css/shortcodes_responsive.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='et_page_templates-css'  href='https://omnirom.org/wp-content/themes/Nexus/epanel/page_templates/page_templates.css?ver=1.8' type='text/css' media='screen' />
+<script type='text/javascript' src='https://omnirom.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://omnirom.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var click_object = {"ajax_url":"https:\/\/omnirom.org\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://omnirom.org/wp-content/plugins/adrotate/library/jquery.adrotate.clicktracker.js'></script>
+<script type='text/javascript' src='https://omnirom.org/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.6'></script>
+<link rel='https://api.w.org/' href='https://omnirom.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://omnirom.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://omnirom.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.1" />
+
+<!-- This site is using AdRotate v4.6.1 to display their advertisements - https://ajdg.solutions/products/adrotate-for-wordpress/ -->
+<!-- AdRotate CSS -->
+<style type="text/css" media="screen">
+	.g { margin:0px; padding:0px; overflow:hidden; line-height:1; zoom:1; }
+	.g img { height:auto; }
+	.g-col { position:relative; float:left; }
+	.g-col:first-child { margin-left: 0; }
+	.g-col:last-child { margin-right: 0; }
+	.g-4 { margin:1px; }
+	@media only screen and (max-width: 480px) {
+		.g-col, .g-dyn, .g-single { width:100%; margin-left:0; margin-right:0; }
+	}
+</style>
+<!-- /AdRotate CSS -->
+
+
+<!-- Fancybox for WordPress -->
+<script type="text/javascript">
+jQuery(function(){
+
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+	var arr = jQuery("a.fancybox");
+	jQuery.each(arr, function() {
+		var title = jQuery(this).children("img").attr("title");
+		jQuery(this).attr('title',title);
+	})
+}
+
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+jQuery("a.fancybox").fancybox({
+	'cyclic': true,
+	'autoScale': true,
+	'padding': 10,
+	'opacity': true,
+	'speedIn': 500,
+	'speedOut': 500,
+	'changeSpeed': 300,
+	'overlayShow': true,
+	'overlayOpacity': "0.3",
+	'overlayColor': "#666666",
+	'titleShow': true,
+	'titlePosition': 'inside',
+	'enableEscapeButton': true,
+	'showCloseButton': true,
+	'showNavArrows': true,
+	'hideOnOverlayClick': true,
+	'hideOnContentClick': false,
+	'width': 560,
+	'height': 340,
+	'transitionIn': "fade",
+	'transitionOut': "fade",
+	'centerOnScroll': true
+});
+
+
+})
+</script>
+<!-- END Fancybox for WordPress -->
+<script type='text/javascript'>
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+</script>
+
+<!-- Plugin: Open external links a new window. Plugin by Kristian Risager Larsen, http://kristianrisagerlarsen.dk . Download it at http://wordpress.org/extend/plugins/open-external-links-in-a-new-window/ -->
+<script type="text/javascript">//<![CDATA[
+	function external_links_in_new_windows_loop() {
+		if (!document.links) {
+			document.links = document.getElementsByTagName('a');
+		}
+		var change_link = false;
+		var force = 'docs.omnirom.org';
+		var ignore = 'omnirom.org';
+
+		for (var t=0; t<document.links.length; t++) {
+			var all_links = document.links[t];
+			change_link = false;
+			
+			if(document.links[t].hasAttribute('onClick') == false) {
+				// forced if the address starts with http (or also https), but does not link to the current domain
+				if(all_links.href.search(/^http/) != -1 && all_links.href.search('omnirom.org') == -1) {
+					// alert('Changeda '+all_links.href);
+					change_link = true;
+				}
+					
+				if(force != '' && all_links.href.search(force) != -1) {
+					// forced
+					// alert('force '+all_links.href);
+					change_link = true;
+				}
+				
+				if(ignore != '' && all_links.href.search(ignore) != -1) {
+					// alert('ignore '+all_links.href);
+					// ignored
+					change_link = false;
+				}
+
+				if(change_link == true) {
+					// alert('Changed '+all_links.href);
+					document.links[t].setAttribute('onClick', 'javascript:window.open(\''+all_links.href+'\'); return false;');
+					document.links[t].removeAttribute('target');
+				}
+			}
+		}
+	}
+	
+	// Load
+	function external_links_in_new_windows_load(func)
+	{	
+		var oldonload = window.onload;
+		if (typeof window.onload != 'function'){
+			window.onload = func;
+		} else {
+			window.onload = function(){
+				oldonload();
+				func();
+			}
+		}
+	}
+
+	external_links_in_new_windows_load(external_links_in_new_windows_loop);
+	//]]></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />	<style>
+		a { color: #4bb6f5; }
+
+		body { color: #333333; }
+
+		#top-menu li.current-menu-item > a, #top-menu > li > a:hover, .meta-info, .et-description .post-meta span, .categories-tabs:after, .home-tab-active, .home-tab-active:before, a.read-more, .comment-reply-link, h1.post-heading, .form-submit input, .home-tab-active:before, .et-recent-videos-wrap li:before, .nav li ul, .et_mobile_menu, #top-menu > .sfHover > a { background-color: #a9d300; }
+
+		.featured-comments span, #author-info strong, #footer-bottom .current-menu-item a, .featured-comments span { color: #a9d300; }
+		.entry-content blockquote, .widget li:before, .footer-widget li:before, .et-popular-mobile-arrow-next { border-left-color: #a9d300; }
+
+		.et-popular-mobile-arrow-previous { border-right-color: #a9d300; }
+
+		#top-menu > li > a { color: #333333; }
+
+		#top-menu > li.current-menu-item > a, #top-menu li li a, .et_mobile_menu li a { color: #ffffff; }
+
+	h1, h2, h3, h4, h5, h6 { font-family: 'Droid Sans', Helvetica, Arial, Lucida, sans-serif; }body, input, textarea, select { font-family: 'Ubuntu', Helvetica, Arial, Lucida, sans-serif; }	</style>
+<style>#featured { background-image: url(https://omnirom.org/wp-content/themes/Nexus/images/featured-bg.jpg); }</style><link rel="shortcut icon" href="https://omnirom.org/wp-content/uploads/2013/08/favicon_new.ico" /><!-- BEGIN GADWP v5.1.1.1 Universal Analytics - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-12268453-4', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END GADWP Universal Analytics -->
+<style type="text/css" id="et-custom-css">
+#adJeremy {
+  width: 100% ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+</style><script type="text/javascript">
+
+
+    
+</script>
+</head>
+<body class="home blog unknown et_includes_sidebar">
+	<header id="main-header">
+		<div class="container">
+			<div id="top-info" class="clearfix">
+			
+							<a href="https://omnirom.org/">
+					<img src="https://omnirom.org/wp-content/uploads/2013/11/omnirom_logo-big_layout_transparent-250px-150x150.png" alt="OmniROM" id="logo" />
+				</a>
+			</div>
+
+			<div id="top-navigation" class="clearfix">
+				<div id="et_mobile_nav_menu"><a href="#" class="mobile_nav closed">Navigation Menu<span class="et_mobile_arrow"></span></a></div>
+				<nav>
+				<ul id="top-menu" class="nav"><li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-90"><a href="http://omnirom.org/">Home</a></li>
+<li id="menu-item-350" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-350"><a href="https://omnirom.org/about/">About Omni</a>
+<ul  class="sub-menu">
+	<li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-477"><a href="https://omnirom.org/about/news/">In the News</a></li>
+</ul>
+</li>
+<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://omnirom.org/get-involved/">Get Involved</a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-110"><a href="https://omnirom.org/source-code/">Source</a>
+<ul  class="sub-menu">
+	<li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="https://omnirom.org/contributors/">Contributors</a></li>
+</ul>
+</li>
+<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-168"><a href="https://omnirom.org/supported-devices/">Devices</a>
+<ul  class="sub-menu">
+	<li id="menu-item-353" class="ppr-new-window menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a target="_blank" href="https://omnirom.org?page_id=351&#038;preview_id=351">Changelog</a></li>
+	<li id="menu-item-282" class="ppr-new-window menu-item menu-item-type-post_type menu-item-object-page menu-item-282"><a target="_blank" href="https://omnirom.org/downloads/">Downloads</a></li>
+</ul>
+</li>
+<li id="menu-item-191" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-191"><a href="http://docs.omnirom.org/">Wiki</a></li>
+<li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://omnirom.org/blog/">Blog</a></li>
+<li id="menu-item-432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-432"><a href="https://omnirom.org/donate/">Donate</a></li>
+</ul>				</nav>
+
+				<ul id="et-social-icons">
+										<li class="twitter">
+						<a href="https://twitter.com/omni_rom">
+							<span class="et-social-normal">Follow us on Twitter</span>
+							<span class="et-social-hover"></span>
+						</a>
+					</li>
+					
+										<li class="facebook">
+						<a href="https://www.facebook.com/omnirom">
+							<span class="et-social-normal">Follow us on Facebook</span>
+							<span class="et-social-hover"></span>
+						</a>
+					</li>
+					
+										<li class="rss">
+												<a href="https://omnirom.org/feed/">
+							<span class="et-social-normal">Subscribe To Rss Feed</span>
+							<span class="et-social-hover"></span>
+						</a>
+					</li>
+					
+										<li class="google">
+						<a href="https://plus.google.com/u/0/communities/102450203113748251717">
+							<span class="et-social-normal">Follow Us On Google+</span>
+							<span class="et-social-hover"></span>
+						</a>
+					</li>
+									</ul>
+			</div> <!-- #top-navigation -->
+		</div> <!-- .container -->
+	</header> <!-- #main-header -->
+<div id="featured">
+	<div class="container">
+		<div id="et-featured-posts" class="clearfix">
+			<div class="et-featured-post et-first">
+				<img src="https://omnirom.org/wp-content/uploads/2017/05/may_2017_omni-578x420.jpg" alt='Updates for May 2017' width='578' height='420' />
+				<div class="meta-info">
+					<div class="meta-date">
+						<span class="month">May</span><span>25</span>
+					</div>
+
+					<span class="featured-comments"><span>0</span></span>
+				</div>
+
+				<div class="post-description">
+					<h2><a href="https://omnirom.org/features/updates-may-2017/">Updates for May 2017</a></h2>
+					<p class="post-meta">
+					Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> on May 25, 2017					</p>
+				</div>
+
+				<div class="post-excerpt">
+					<div class="excerpt-wrap">
+						<a href="https://omnirom.org/features/updates-may-2017/" class="post-title">Updates for May 2017</a>
+						<p>They say that &#8220;April showers bring May flowers,&#8221; and while in nature that is often true &#8211; it certainly seems to fit for us at Omni. We have been busy with a number of administrative tasks, which includes updates to Gerrit (our code review portal) and a few other sundry items. In addition to those items, we&#8217;ve added a few new people to the contributors in golden-guy (helping out with Moto G4/G4+ bring-up) and vache. To the list of supported devices we&#8217;ve added a few more: Motorola G4 / G4 Plus (athene) Xiaomi Redmi Note 3 (kenzo) Thanks to  humberos, erikcas, and oshmoun) we have revamped the device trees for the Sony Xperia X (suzu) and X Compact (kugo) to use CAF HALs and blobs. This action should improve the camera quality and make it more like that of the stock camera experience, while also adding ambient display. And on top of all that, we&#8217;ve rolled out Android 7.1.2! We do thank you for your support and we&#8217;ll continue to keep you updated!...</p>
+					</div>
+					<a href="https://omnirom.org/features/updates-may-2017/" class="excerpt-more">Read more</a>
+				</div>
+			</div> <!-- .et-featured-post -->
+			<div class="et-featured-post et-second">
+				<img src="https://omnirom.org/wp-content/uploads/2017/03/omni_spring_2017_800px-578x208.png" alt='Spring 2017 Omni Updates' width='578' height='208' />
+				<div class="meta-info">
+					<div class="meta-date">
+						<span class="month">Mar</span><span>31</span>
+					</div>
+
+					<span class="featured-comments"><span>0</span></span>
+				</div>
+
+				<div class="post-description">
+					<h2><a href="https://omnirom.org/features/spring-2017-omni-updates/">Spring 2017 Omni Updates</a></h2>
+					<p class="post-meta">
+					Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> on Mar 31, 2017					</p>
+				</div>
+
+				<div class="post-excerpt">
+					<div class="excerpt-wrap">
+						<a href="https://omnirom.org/features/spring-2017-omni-updates/" class="post-title">Spring 2017 Omni Updates</a>
+						<p>Spring is all about the old dying out and new life coming &#8211; which for us means there are a number of new things happening at Omni. We&#8217;ve been working on features, added new devices, and even had new people join the team. So let&#8217;s get right to it shall we? Features At Omni we have always been about adding solid features which enhance the experience while still giving the user control, while also not just adding them for the sake of adding. There&#8217;s a purpose to everything we do. Music After searching for a solid replacement to the solid Apollo, which has been on minimal life support for a while now, we&#8217;ve decided to base on the GPLv3-licensed Phonograph. We feel that it is a good base for the time to come and will allow for us to add new features which will benefit the community as a whole. Oshmoun did a great job in getting it setup to build with the ROM but still allows for using Android Studio for development. Wallpapers, Header Packs, and More We began a new project recently called OmniStyle which allowed for styling the status bar headers, and now we&#8217;ve added functionality to allow wallpapers to be &#8220;styled&#8221; as well. We have added a new wallpaper picker activity into OmniStyle and then also integrated it into Settings under the Style section. We are searching for new contributions to wallpapers, header packs, boot animations, and sounds which exhibit the Omni branding as well as an Omni theme...</p>
+					</div>
+					<a href="https://omnirom.org/features/spring-2017-omni-updates/" class="excerpt-more">Read more</a>
+				</div>
+			</div> <!-- .et-featured-post -->
+			<div class="et-featured-post et-third">
+				<img src="https://omnirom.org/wp-content/uploads/2017/01/Android-security-2017update-287x208.jpg" alt='New Year, New Month, New Security Updates' width='287' height='208' />
+				<div class="meta-info">
+					<div class="meta-date">
+						<span class="month">Jan</span><span>05</span>
+					</div>
+
+					<span class="featured-comments"><span>0</span></span>
+				</div>
+
+				<div class="post-description">
+					<h2><a href="https://omnirom.org/features/new-year-new-month-new-security-updates/">New Year, New Month, New Security Updates</a></h2>
+					<p class="post-meta">
+					Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> on Jan 5, 2017					</p>
+				</div>
+
+				<div class="post-excerpt">
+					<div class="excerpt-wrap">
+						<a href="https://omnirom.org/features/new-year-new-month-new-security-updates/" class="post-title">New Year, New Month, New Security Updates</a>
+						<p>New Updates and Devices With 2017 now upon us, and the collective hangover from 2016 somewhat passed, it&#8217;s time to focus on what&#8217;s happening this month with OmniROM. As some of you may know, the January 2017 Android Security Bulletin has been released and with it a slew of updates to AOSP. We have merged those into the existing 7.1 codebases (r10) and will be looking to backport soon as well. With a new...</p>
+					</div>
+					<a href="https://omnirom.org/features/new-year-new-month-new-security-updates/" class="excerpt-more">Read more</a>
+				</div>
+			</div> <!-- .et-featured-post -->
+			<div class="et-featured-post et-fourth">
+				<img src="https://omnirom.org/wp-content/uploads/2016/12/3bJ91bF-287x208.png" alt='Strengthening Communication in our Community' width='287' height='208' />
+				<div class="meta-info">
+					<div class="meta-date">
+						<span class="month">Dec</span><span>27</span>
+					</div>
+
+					<span class="featured-comments"><span>0</span></span>
+				</div>
+
+				<div class="post-description">
+					<h2><a href="https://omnirom.org/general/strengthening-communication-community/">Strengthening Communication in our Community</a></h2>
+					<p class="post-meta">
+					Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> on Dec 27, 2016					</p>
+				</div>
+
+				<div class="post-excerpt">
+					<div class="excerpt-wrap">
+						<a href="https://omnirom.org/general/strengthening-communication-community/" class="post-title">Strengthening Communication in our Community</a>
+						<p>One of the core tenets of Omni has been transparency: transparency in decisions, transparency in actions, and transparency in communication (to name a few). As we mentioned in our last update, we&#8217;ve been going through many changes over the past year and one of those has been in how we communicate internally and externally. In the past we have used IRC where we had our internal team channel and a few public channels for...</p>
+					</div>
+					<a href="https://omnirom.org/general/strengthening-communication-community/" class="excerpt-more">Read more</a>
+				</div>
+			</div> <!-- .et-featured-post -->
+		</div> <!-- #et-featured-posts -->
+	</div> <!-- .container -->
+</div> <!-- #featured -->
+<div class="page-wrap container">
+	<div id="main-content">
+		<div class="main-content-wrap clearfix">
+			<div id="content">
+
+				<section class="recent-module">
+					<h1 class="module-title">
+					Recent Posts From <span>All Categories</span>					</h1>
+
+					<div class="module-content">
+				
+<div class="recent-post clearfix">
+	<div class="et-main-image">
+		<a href="https://omnirom.org/features/updates-may-2017/">
+			<img src="https://omnirom.org/wp-content/uploads/2017/05/may_2017_omni-160x160.jpg" alt='Updates for May 2017' width='160' height='160' />		</a>
+	</div>
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/features/updates-may-2017/">Updates for May 2017</a></h2>
+		<p class="post-meta">
+		<span>May 25</span>Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> in <a href="https://omnirom.org/releases/android-7-1/" rel="category tag">android-7.1</a>, <a href="https://omnirom.org/development-2/" rel="category tag">Development</a>, <a href="https://omnirom.org/features/" rel="category tag">Features</a>, <a href="https://omnirom.org/releases/" rel="category tag">Releases</a>		</p>
+		<p>They say that &#8220;April showers bring May flowers,&#8221; and while in...</p>
+	</div>
+</div>
+<div class="recent-post clearfix">
+	<div class="et-main-image">
+		<a href="https://omnirom.org/features/spring-2017-omni-updates/">
+			<img src="https://omnirom.org/wp-content/uploads/2017/03/omni_spring_2017_800px-160x160.png" alt='Spring 2017 Omni Updates' width='160' height='160' />		</a>
+	</div>
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/features/spring-2017-omni-updates/">Spring 2017 Omni Updates</a></h2>
+		<p class="post-meta">
+		<span>Mar 31</span>Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> in <a href="https://omnirom.org/development-2/" rel="category tag">Development</a>, <a href="https://omnirom.org/features/" rel="category tag">Features</a>, <a href="https://omnirom.org/general/" rel="category tag">General</a>		</p>
+		<p>Spring is all about the old dying out and new life coming &#8211; which for...</p>
+	</div>
+</div>
+<div class="recent-post clearfix">
+	<div class="et-main-image">
+		<a href="https://omnirom.org/features/new-year-new-month-new-security-updates/">
+			<img src="https://omnirom.org/wp-content/uploads/2017/01/Android-security-2017update-160x160.jpg" alt='New Year, New Month, New Security Updates' width='160' height='160' />		</a>
+	</div>
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/features/new-year-new-month-new-security-updates/">New Year, New Month, New Security Updates</a></h2>
+		<p class="post-meta">
+		<span>Jan 5</span>Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> in <a href="https://omnirom.org/releases/android-7-1/" rel="category tag">android-7.1</a>, <a href="https://omnirom.org/development-2/" rel="category tag">Development</a>, <a href="https://omnirom.org/features/" rel="category tag">Features</a>, <a href="https://omnirom.org/general/" rel="category tag">General</a>, <a href="https://omnirom.org/releases/" rel="category tag">Releases</a>		</p>
+		<p>New Updates and Devices
+With 2017 now upon us, and the collective hangover...</p>
+	</div>
+</div>
+<div class="recent-post clearfix">
+	<div class="et-main-image">
+		<a href="https://omnirom.org/general/strengthening-communication-community/">
+			<img src="https://omnirom.org/wp-content/uploads/2016/12/3bJ91bF-160x160.png" alt='Strengthening Communication in our Community' width='160' height='160' />		</a>
+	</div>
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/general/strengthening-communication-community/">Strengthening Communication in our Community</a></h2>
+		<p class="post-meta">
+		<span>Dec 27</span>Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> in <a href="https://omnirom.org/development-2/" rel="category tag">Development</a>, <a href="https://omnirom.org/features/" rel="category tag">Features</a>, <a href="https://omnirom.org/general/" rel="category tag">General</a>, <a href="https://omnirom.org/process/" rel="category tag">Process</a>		</p>
+		<p>One of the core tenets of Omni has been transparency: transparency in...</p>
+	</div>
+</div>
+<div class="recent-post clearfix">
+	<div class="et-main-image">
+		<a href="https://omnirom.org/development-2/omni-december-2016-updates/">
+			<img src="https://omnirom.org/wp-content/uploads/2016/12/omni_winter-160x160.jpg" alt='Omni December 2016 Updates' width='160' height='160' />		</a>
+	</div>
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/development-2/omni-december-2016-updates/">Omni December 2016 Updates</a></h2>
+		<p class="post-meta">
+		<span>Dec 20</span>Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> in <a href="https://omnirom.org/releases/android-6-0/" rel="category tag">android-6.0</a>, <a href="https://omnirom.org/releases/android-7-1/" rel="category tag">android-7.1</a>, <a href="https://omnirom.org/development-2/" rel="category tag">Development</a>, <a href="https://omnirom.org/features/" rel="category tag">Features</a>, <a href="https://omnirom.org/releases/" rel="category tag">Releases</a>		</p>
+		<p>With Christmas and New Years fast approaching, it&#8217;s time to look at...</p>
+	</div>
+</div>
+<div class="recent-post clearfix">
+	<div class="et-main-image">
+		<a href="https://omnirom.org/releases/android-7-1/omni-november-2016-updates/">
+			<img src="https://omnirom.org/wp-content/uploads/2016/11/Android-security-160x160.jpg" alt='Omni November 2016 Updates' width='160' height='160' />		</a>
+	</div>
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/releases/android-7-1/omni-november-2016-updates/">Omni November 2016 Updates</a></h2>
+		<p class="post-meta">
+		<span>Nov 29</span>Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> in <a href="https://omnirom.org/releases/android-6-0/" rel="category tag">android-6.0</a>, <a href="https://omnirom.org/releases/android-7-1/" rel="category tag">android-7.1</a>, <a href="https://omnirom.org/development-2/" rel="category tag">Development</a>, <a href="https://omnirom.org/features/" rel="category tag">Features</a>, <a href="https://omnirom.org/releases/" rel="category tag">Releases</a>		</p>
+		<p>First of all, we&#8217;d like to apologize for our radio silence &#8211;...</p>
+	</div>
+</div>
+<div class="recent-post clearfix">
+	<div class="et-main-image">
+		<a href="https://omnirom.org/devices/omnirom-marshmallow-nightlies-are-underway/">
+			<img src="https://omnirom.org/wp-content/uploads/2016/01/Android-marshmallow-techtecular-1-160x160.jpg" alt='OmniROM Marshmallow Nightlies Are Underway' width='160' height='160' />		</a>
+	</div>
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/devices/omnirom-marshmallow-nightlies-are-underway/">OmniROM Marshmallow Nightlies Are Underway</a></h2>
+		<p class="post-meta">
+		<span>Jan 23</span>Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> in <a href="https://omnirom.org/releases/android-6-0/" rel="category tag">android-6.0</a>, <a href="https://omnirom.org/development-2/" rel="category tag">Development</a>, <a href="https://omnirom.org/devices/" rel="category tag">Devices</a>, <a href="https://omnirom.org/features/" rel="category tag">Features</a>, <a href="https://omnirom.org/releases/" rel="category tag">Releases</a>		</p>
+		<p>With the release of Android Marshmallow (android-6.0) in October 2015,...</p>
+	</div>
+</div>
+<div class="recent-post clearfix">
+	<div class="et-main-image">
+		<a href="https://omnirom.org/general/lift-off-5-1-1-lollipop-nightlies-begin/">
+			<img src="https://omnirom.org/wp-content/uploads/2015/02/omni-lollipop-1024x488-160x160.png" alt='We Have Lift-off! 5.1.1 Lollipop Nightlies Begin!' width='160' height='160' />		</a>
+	</div>
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/general/lift-off-5-1-1-lollipop-nightlies-begin/">We Have Lift-off! 5.1.1 Lollipop Nightlies Begin!</a></h2>
+		<p class="post-meta">
+		<span>Jun 21</span>Posted by <a href="https://omnirom.org/author/jiangyi/" title="Posts by Jiangyi" rel="author">Jiangyi</a> in <a href="https://omnirom.org/releases/android-5-1/" rel="category tag">android-5.1</a>, <a href="https://omnirom.org/development-2/" rel="category tag">Development</a>, <a href="https://omnirom.org/features/" rel="category tag">Features</a>, <a href="https://omnirom.org/general/" rel="category tag">General</a>, <a href="https://omnirom.org/releases/" rel="category tag">Releases</a>		</p>
+		<p>Over the past few months our staff and contributors have been working...</p>
+	</div>
+</div>
+<div class="recent-post clearfix">
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/general/gerrit-maintenance/">Gerrit Maintenance</a></h2>
+		<p class="post-meta">
+		<span>Apr 12</span>Posted by <a href="https://omnirom.org/author/pulser/" title="Posts by Pulser" rel="author">Pulser</a> in <a href="https://omnirom.org/general/" rel="category tag">General</a>		</p>
+		<p>We will shortly be doing some important maintenance on the OmniROM gerrit,...</p>
+	</div>
+</div>
+<div class="recent-post clearfix">
+	<div class="et-main-image">
+		<a href="https://omnirom.org/general/status-update-omnirom-lollipop/">
+			<img src="https://omnirom.org/wp-content/uploads/2015/02/omni-lollipop-1024x488-160x160.png" alt='Status Update on OmniROM Lollipop' width='160' height='160' />		</a>
+	</div>
+	<div class="et-description">
+		<h2><a href="https://omnirom.org/general/status-update-omnirom-lollipop/">Status Update on OmniROM Lollipop</a></h2>
+		<p class="post-meta">
+		<span>Feb 9</span>Posted by <a href="https://omnirom.org/author/jerdog/" title="Posts by jerdog" rel="author">jerdog</a> in <a href="https://omnirom.org/releases/android-5-0/" rel="category tag">android-5.0</a>, <a href="https://omnirom.org/development-2/" rel="category tag">Development</a>, <a href="https://omnirom.org/features/" rel="category tag">Features</a>, <a href="https://omnirom.org/general/" rel="category tag">General</a>		</p>
+		<p>Not too long ago we let you know the progress on rolling out Lollipop on...</p>
+	</div>
+</div>					</div> <!-- .module-content -->
+
+									<div class="load-more">
+						<a href="#" data-category="all" data-number="10">Load More Posts</a>
+					</div>
+								</section> <!-- .recent-module -->
+			</div> <!-- #content -->
+
+				<div id="additional-sidebar">
+		<div id="text-12" class="widget widget_text">			<div class="textwidget"></div>
+		</div> <!-- end .widget -->	</div> <!-- #additional-sidebar -->
+
+				<div id="sidebar">
+		<div id="google_ads_master_widget_ads-2" class="widget Google Ads Master"><div style="float:left;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- omnirom responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7624683721825672"
+     data-ad-slot="5327626691"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div> <!-- end .widget --><div id="twitter-2" class="widget widget_twitter"><div><h4 class="widgettitle"><span class='twitterwidget twitterwidget-title'>Recent Tweets</span></h4><ul><li><span class='entry-content'>New post: Updates for May 2017 They say that "April showers b <a href="https://t.co/htE1sLuFnu" target="_blank">https://t.co/htE1sLuFnu</a> <a href="http://twitter.com/search?q=%23android" class="twitter-hashtag" target="_blank">#android</a>-7.1 <a href="http://twitter.com/search?q=%23motorola_g4" class="twitter-hashtag" target="_blank">#motorola_g4</a> <a href="http://twitter.com/search?q=%23sony_xperia_x" class="twitter-hashtag" target="_blank">#sony_xperia_x</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/Omni_ROM/statuses/867826698347311104" target="_blank">07:36:22 PM May 25, 2017</a></span> <span class='from-meta'>from <a href="http://omnirom.org" rel="nofollow">OMNIROM</a></span></span></li><li><span class='entry-content'>New post: Spring 2017 Omni Updates Spring is all about the old dy <a href="https://t.co/wLfiIBINfB" target="_blank">https://t.co/wLfiIBINfB</a> <a href="http://twitter.com/search?q=%23android" class="twitter-hashtag" target="_blank">#android</a>-7.1 <a href="http://twitter.com/search?q=%23omnirom" class="twitter-hashtag" target="_blank">#omnirom</a> <a href="http://twitter.com/search?q=%23spring" class="twitter-hashtag" target="_blank">#spring</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/Omni_ROM/statuses/847890953180520448" target="_blank">07:18:50 PM March 31, 2017</a></span> <span class='from-meta'>from <a href="http://omnirom.org" rel="nofollow">OMNIROM</a></span></span></li><li><span class='entry-content'>New post: New Year, New Month, New Security Updates <a href="https://t.co/oJJOqGrsub" target="_blank">https://t.co/oJJOqGrsub</a> <a href="http://twitter.com/search?q=%23android" class="twitter-hashtag" target="_blank">#android</a>-7.1 <a href="http://twitter.com/search?q=%23omni" class="twitter-hashtag" target="_blank">#omni</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/Omni_ROM/statuses/817093374381531136" target="_blank">07:40:15 PM January 05, 2017</a></span> <span class='from-meta'>from <a href="http://omnirom.org" rel="nofollow">OMNIROM</a></span></span></li><li><span class='entry-content'>Strengthening Communication in our Community <a href="https://t.co/MxMk0Gkvzu" target="_blank">https://t.co/MxMk0Gkvzu</a> <a href="http://twitter.com/search?q=%23communication" class="twitter-hashtag" target="_blank">#communication</a> <a href="http://twitter.com/search?q=%23community" class="twitter-hashtag" target="_blank">#community</a> <a href="http://twitter.com/search?q=%23omni" class="twitter-hashtag" target="_blank">#omni</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/Omni_ROM/statuses/813807182772834304" target="_blank">06:02:06 PM December 27, 2016</a></span> <span class='from-meta'>from <a href="http://omnirom.org" rel="nofollow">OMNIROM</a></span></span></li><li><span class='entry-content'>RT <a href="http://twitter.com/jcbwhtly" class="twitter-user" target="_blank">@jcbwhtly</a>: New build dated 20161225 is up for the <a href="http://twitter.com/nextbitsys" class="twitter-user" target="_blank">@nextbitsys</a> Robin, <a href="http://twitter.com/Omni_ROM" class="twitter-user" target="_blank">@Omni_ROM</a>  7.1.1_r6!
+
+<a href="https://t.co/ey7VWG2Bqs" target="_blank">https://t.co/ey7VWG2Bqs</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/Omni_ROM/statuses/813024938126872576" target="_blank">02:13:45 PM December 25, 2016</a></span> <span class='from-meta'>from <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a></span></span></li></ul><div class="follow-button"><a href="http://twitter.com/omni_rom" class="twitter-follow-button" title="Follow @omni_rom" data-lang="en" target="_blank">@omni_rom</a></div></div></div> <!-- end .widget -->	</div> <!-- end #sidebar -->
+
+		</div> <!-- .main-content-wrap -->
+
+			</div> <!-- #main-content -->
+
+			
+<footer id="main-footer">
+	<div id="footer-widgets" class="clearfix">
+	<div class="footer-widget"><div id="text-8" class="fwidget widget_text">			<div class="textwidget"></div>
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget -->	</div> <!-- #footer-widgets -->
+</footer> <!-- #main-footer -->
+		<div id="footer-bottom">
+		<ul id="menu-menu-1" class="bottom-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-90"><a href="http://omnirom.org/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-350"><a href="https://omnirom.org/about/">About Omni</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://omnirom.org/get-involved/">Get Involved</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-110"><a href="https://omnirom.org/source-code/">Source</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-168"><a href="https://omnirom.org/supported-devices/">Devices</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-191"><a href="http://docs.omnirom.org/">Wiki</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://omnirom.org/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-432"><a href="https://omnirom.org/donate/">Donate</a></li>
+</ul>		</div> <!-- #footer-bottom -->
+	</div> <!-- .page-wrap -->
+
+	<div id="footer-info" class="container">
+		<p id="copyright">Designed by <a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a href="http://www.wordpress.org">WordPress</a></p>
+	</div>
+
+	<link rel='stylesheet' id='comments_evolved_tabs_css-css'  href='https://omnirom.org/wp-content/plugins/gplus-comments/assets/styles/plugin.css?ver=1.6.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://omnirom.org/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://omnirom.org/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://omnirom.org/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://omnirom.org/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/omnirom.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://omnirom.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9'></script>
+<script type='text/javascript' src='https://omnirom.org/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qpprFrontData = {"linkData":{"https:\/\/omnirom.org\/downloads\/":[1,0,""],"https:\/\/omnirom.org?page_id=351&preview_id=351":[1,0,""]},"siteURL":"https:\/\/omnirom.org","siteURLq":"https:\/\/omnirom.org"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://omnirom.org/wp-content/plugins/quick-pagepost-redirect-plugin/js/qppr_frontend_script.min.js?ver=5.1.8'></script>
+<script type='text/javascript' src='https://omnirom.org/wp-content/themes/Nexus/js/superfish.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"mobile_nav_text":"Navigation Menu","ajaxurl":"https:\/\/omnirom.org\/wp-admin\/admin-ajax.php","et_hb_nonce":"ed72751d93"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://omnirom.org/wp-content/themes/Nexus/js/custom.js?ver=1.0'></script>
+<script type='text/javascript' src='https://omnirom.org/wp-content/themes/Nexus/epanel/page_templates/js/fancybox/jquery.easing-1.3.pack.js?ver=1.3.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_ptemplates_strings = {"captcha":"Captcha","fill":"Fill","field":"field","invalid":"Invalid email"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://omnirom.org/wp-content/themes/Nexus/epanel/page_templates/js/et-ptemplates-frontend.js?ver=1.1'></script>
+<script type='text/javascript' src='https://omnirom.org/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+<script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=1.0.0'></script>
+<!-- Comments Evolved plugin -->
+<script>jQuery("#comments-evolved-tabs").tabs();</script>
+<!-- //Comments Evolved plugin -->
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using memcache (SSL caching disabled)
+Minified using memcache
+Database Caching 70/77 queries in 0.029 seconds using memcache
+
+ Served from: omnirom.org @ 2017-09-02 20:01:46 by W3 Total Cache -->
+<!--Cached using Nginx-Helper on 2017-09-02 20:01:46. It took 7 queries executed in 0.799 seconds.-->
+<!--Visit http://wordpress.org/extend/plugins/nginx-helper/faq/ for more details-->

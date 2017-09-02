@@ -1,0 +1,49 @@
+---
+layout: post
+title: Easily Switch Between Apps With OmniSwitch
+date: 2014-02-02 15:49:35.000000000 -06:00
+type: post
+published: true
+status: publish
+categories:
+- Features
+tags:
+- android
+- omnirom
+- omniswitch
+- open source
+meta:
+  _edit_last: '2'
+  _et_single_bg_image: ''
+  _format_video_embed: ''
+  _jd_tweet_this: 'yes'
+  _thumbnail_id: '496'
+  _wp_jd_goo: http://goo.gl/CAYr97
+  _wp_jd_target: http://omnirom.org/features/easily-switch-apps-omniswitch/
+  _jd_wp_twitter: 'a:1:{i:0;s:133:"New post: Easily Switch Between Apps With OmniSwitch
+    Android presents a relatively http://goo.gl/CAYr97 #android #omnirom #omniswitch";}'
+author:
+  login: jerdog
+  email: jerdog@xda-developers.com
+  display_name: jerdog
+  first_name: ''
+  last_name: ''
+---
+<p>Android presents a relatively easy way to switch between running apps and ending apps, but there isn't a great way to keep favorites readily available while at the same time giving you complete control over running apps. And that's where OmniSwitch from Omni Developer <a href="https://gerrit.omnirom.org/#/q/owner:%22Max+Weninger+%253Cmax.weninger%2540gmail.com%253E%22,n,z" target="_blank">maxwen</a> comes into play.</p>
+<p><a href="http://omnirom.org/wp-content/uploads/2014/02/ic_launcher.png"><img class="alignright size-full wp-image-496" alt="omniswitch" src="{{ site.baseurl }}/assets/ic_launcher.png" width="144" height="144" /></a>OmniSwitch is an open source, recent apps switcher with support for application control and favorites. The idea behind OmniSwitch was to make application switching as easy as possible due to that function becoming more and more important in Android as RAM continues to grow in new phones. In theory, you should be able to do nearly all of your switching between apps using OmniSwitch with a single swipe and click.</p>
+<p><span style="line-height: 1.5em;">OmniSwitch can be opened by swiping a drag handle that can be freely placed on either side of the screen, and opens as an overlay which contains three parts:</span></p>
+<ul>
+<li><strong>Action Buttons</strong> - for application control like "kill all", "kill others" or "switch to last app"</li>
+<li><strong>Recent apps</strong> - a horizontal list of recent apps where swiping up or down will stop the app</li>
+<li><strong>Favorites</strong> - a horizontal list of apps which can be configured</li>
+</ul>
+<p>[gallery link="file" columns="1" ids="503,504"]</p>
+<p>As Omni is about freedom of choice, we chose (swidt?) to implement this as a standalone application (link coming soon) so that if you don't like it, or don't want to use it, you will have absolutely no side-effects to your experience. Most of the features, except for application control, will work fine. However for controlling applications like killing them, OmniSwitch needs special permissions that are only available if it is installed as a system app. It is for this reason that we chose (grin) to include it inside of the build. <em>Note: the application control features will <span style="text-decoration: underline;">only</span> work on Android 4.4.x and when the app is placed in /system/app-priv.</em></p>
+<p>Most of the configuration options should be self-explanatory, consisting of settings to define location, look of the drag handle, the overlay, and the favorite applications list and their order. One noteworthy setting is "Auto-hide." In order to prevent accidentally triggering the OmniSwitch, this will change it to a two-step activation mechanism. The first swipe will show the drag handle for 3 seconds, and the second swipe with activate it.</p>
+<p>[gallery link="file" columns="1" ids="502,501,500,499"]</p>
+<p>OmniSwitch is of course an ongoing project, and we welcome involvement. A few of the things that are already on the TODO list are:</p>
+<ul>
+<li>allow using as a replacement of the AOSP recents view</li>
+<li>enhanced favorites support e.g. support of favorite folders to structure favorites or something like an app drawer to start any app</li>
+</ul>
+<p>OmniSwitch is up on our <a href="https://github.com/omnirom/android_packages_apps_OmniSwitch">github</a>, so feel free to contribute via <a href="https://gerrit.omnirom.org" target="_blank">Gerrit</a>.</p>
