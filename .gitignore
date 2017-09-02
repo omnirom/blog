@@ -28,11 +28,11 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
-_pages
-_wpcf7_contact_forms
-_nav_menu_items
-_faqs
-_drafts
+_pages/
+_wpcf7_contact_forms/
+_nav_menu_items/
+_faqs/
+_drafts/
 
 
 # Komodo
