@@ -6,8 +6,10 @@ GEM
     colorator (1.1.0)
     faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
+    fastercsv (1.5.5)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
+    hpricot (0.8.6)
     jekyll (3.5.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -21,6 +23,10 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-gist (1.4.1)
       octokit (~> 4.2)
+    jekyll-import (0.12.0)
+      fastercsv
+      jekyll (>= 1.4)
+      nokogiri
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
@@ -32,10 +38,14 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
+    mini_portile2 (2.2.0)
     multi_json (1.12.1)
     multipart-post (2.0.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
+    open_uri_redirections (0.2.1)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.0)
@@ -60,9 +70,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  hpricot
   jekyll
   jekyll-gist
+  jekyll-import
   jekyll-paginate
+  open_uri_redirections
   pygments.rb
   redcarpet
 
