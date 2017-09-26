@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -67,6 +67,7 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: left;
+    overflow: auto;
   }
 }
 
@@ -75,12 +76,25 @@ html {
   color: #fff;
 }
 
+.sidebar .logo {
+  max-width: 50px;
+}
+
+@media (min-width: 48em) {
+  .sidebar .logo {
+    max-width: 100px;
+  }
+}
+
 /* About section */
+.sidebar-about:hover {
+  text-decoration: none;
+}
+
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-size: 2rem;
 }
 
 /* Sidebar nav */
