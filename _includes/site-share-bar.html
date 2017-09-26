@@ -4,9 +4,9 @@ added 26-Sep-2017 jerdog:  taken from https://mycyberuniverse.com/web/social-med
 <div id="site-share-bar">
 	<h4>Follow OmniROM:</h4>
 	<div class="site-share-buttons" align="middle">
-			<a href="https://twitter.com/Omni_ROM" target="_blank" data-show-count="false"><i class="fa fa-twitter site-share-button"> @Omni_ROM</i></a>
+			<a href="https://twitter.com/Omni_ROM" target="_blank" data-show-count="false"><i class="fa fa-twitter site-share-button"></i></a>
 
-			<a href="https://plus.google.com/communities/102450203113748251717" target="_blank"><i class="fa fa-google-plus site-share-button"> google</i></a>
+			<a href="https://plus.google.com/communities/102450203113748251717" target="_blank"><i class="fa fa-google-plus site-share-button"></i></a>
 	</div>
 </div>
 
@@ -17,36 +17,36 @@ added 26-Sep-2017 jerdog:  taken from https://mycyberuniverse.com/web/social-med
 	    <a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
 	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
 	        title="Share on Facebook" >
-	        <i class="fa fa-facebook-official site-share-button"> facebook</i>
+	        <i class="fa fa-facebook-official site-share-button"></i>
 	    </a>
 
 	    <a  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
 	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
 	        title="Share on Twitter" >
-	        <i class="fa fa-twitter site-share-button"> twitter</i>
+	        <i class="fa fa-twitter site-share-button"></i>
 	    </a>
 
 	    <a  href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
 	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
 	        title="Share on Google+" >
-	        <i class="fa fa-google-plus site-share-button"> google</i>
+	        <i class="fa fa-google-plus site-share-button"></i>
 	    </a>
 
 	    <a  href="http://www.reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
 	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
 	        title="Share on Reddit" >
-	        <i class="fa fa-reddit-alien site-share-button"> reddit</i>
+	        <i class="fa fa-reddit-alien site-share-button"></i>
 	    </a>
 
 	    <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"
 	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
 	        title="Share on LinkedIn" >
-	        <i class="fa fa-linkedin site-share-button"> linkedin</i>
+	        <i class="fa fa-linkedin site-share-button"></i>
 	    </a>
 
 	    <a  href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{ site.baseurl }}{{ page.url }}"
 	        title="Share via Email" >
-	        <i class="fa fa-envelope site-share-button"> email</i>
+	        <i class="fa fa-envelope site-share-button"></i>
 	    </a>
 	</div>
 
@@ -67,16 +67,29 @@ added 26-Sep-2017 jerdog:  taken from https://mycyberuniverse.com/web/social-med
 
 /* All buttons */
 .site-share-buttons {
+  padding: 5px 10px;
+	background: rgba(255,255,255,0.8);
+  border-radius: 5px;
+}
+.site-share-buttons a {
+	display: inline-block;
+}
+
+.site-share-buttons a:hover,
+.site-share-buttons a:focus {
+	text-decoration: none;
 }
 
 /* Each button */
 .site-share-button {
-    margin: 0px;
-    margin-bottom: 10px;
-    margin-right: 3px;
+    margin: 5px 3px;
     border: 1px solid #D3D6D2;
     padding: 5px 10px 5px 10px;
 		background-color: #fff;
+
+		background: none;
+    border: none;
+		border-radius: 5px;
 }
 .site-share-button:hover {
     opacity: 1;

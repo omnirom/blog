@@ -55,7 +55,7 @@ html {
 
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 20px 10px;
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
@@ -67,7 +67,9 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: left;
+    padding: 20px 15px;
     overflow: auto;
+    font-size: 16px;
   }
 }
 
@@ -94,7 +96,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 /* Sidebar nav */
