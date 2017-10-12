@@ -27,6 +27,7 @@ GEM
       fastercsv
       jekyll (>= 1.4)
       nokogiri
+    jekyll-json (0.0.1)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
@@ -74,10 +75,11 @@ DEPENDENCIES
   jekyll
   jekyll-gist
   jekyll-import
+  jekyll-json
   jekyll-paginate
   open_uri_redirections
   pygments.rb
   redcarpet
 
 BUNDLED WITH
-   1.13.6
+   1.15.1
