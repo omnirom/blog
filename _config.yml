@@ -22,7 +22,7 @@ include: _redirects
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
-excerpt_separator: "\n\n"
+excerpt_separator: "</p>"
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
