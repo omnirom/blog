@@ -40,5 +40,7 @@ categories:
 -
 tags:
 -
+author:
+  display_name: name_to_be_displayed
 ---
 ```
