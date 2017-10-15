@@ -40,5 +40,12 @@ categories:
 -
 tags:
 -
+author:
+  display_name: name_to_be_displayed
 ---
 ```
+All posts need to be placed into the `_posts` folder and the file name following the below convention:
+```
+YYYY-MM-DD-title-of-post.MARKUP
+```
+The file extension can be `.md` if you're doing a post using [Markdown](https://guides.github.com/features/mastering-markdown/) code, or `.html` if you decide to do an HTML post. 
