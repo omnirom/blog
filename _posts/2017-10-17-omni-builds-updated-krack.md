@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OmniROM builds updated with KRACK fixes"
-date: 2017-10-15 13:00:00 -0500
+date: 2017-10-17 16:00:00 -0500
 excerpt: "Nothing ruins your day like a good security vulnerability being released, especially if it affects something you use on a regular basis. If I have just described you, then this one likely could give you a case of heartburn as it affects not just mobile devices, but even your connected toaster."
 categories:
 - development
