@@ -10,7 +10,7 @@ tags:
 - website
 - news
 author:
-  display_name: name_to_be_displayed
+  display_name: Jeremy
 ---
 
 In case you haven't noticed, or you've newly found Omni, our website and blog has taken on a new look and feel. After four years, FOUR YEARS!!!, we felt it was time to breathe a little bit more life into the project. We've been working on this new design, both the blog and [website](https://www.omnirom.org), for the past 7 months, off and on as we all have real lives and jobs, and we're glad to finally bring it out into the open.
