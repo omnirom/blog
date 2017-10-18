@@ -5,14 +5,17 @@ title: Omni Blog | OmniROM
 
 <div class="posts">
   {% for post in paginator.posts %}
+<!--  //IMAGE -->
+  <img src="{{ site.baseurl }}images/{{ post.image }}">
+<!--  //IMAGE -->
   <div class="post">
-    <h1 class="post-title">
+      <h1 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ post.date | date_to_string }} by {{post.author.display_name}}</span>
 
     {{ post.excerpt }}
     <p><a class="btn btn-sm btn-primary" href="{{ post.url }}/" role="button">Read more <i class="fa fa-arrow-circle-right"></i></a></p>
