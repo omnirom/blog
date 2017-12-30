@@ -2,7 +2,7 @@
 layout: post
 title: "OmniROM Oreo (8.1) weekly builds started"
 date: 2017-12-31 00:00:00 -0500
-excerpt: "Happy new Year 2018. As of today were starting our weekly builds for Android O (8.1) with 3 devices."
+excerpt: "Happy new Year 2018! As of today we are starting our weekly builds for Android O (8.1) with 3 devices."
 categories:
 - development
 tags:
@@ -16,7 +16,7 @@ author:
 **Happy new Year 2018**
 -----------------------
 
-As of today were starting our weekly builds for Android O (8.1) with 3 devices.
+As of today we are starting our weekly builds for Android O (8.1) with 3 devices.
 
 The devices are:
 
@@ -37,4 +37,4 @@ Some advice for the new Year from us ;-)
  - build a house
  - be nice 
 
-HAPPY NEW YEAR 2018
+HAPPY NEW YEAR 2018!!!
