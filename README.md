@@ -1,5 +1,4 @@
-![logo](https://github.com/omnirom/Docs/blob/master/images/omnirom_logo-big_layo
-ut_transparent-250px-150x150.png)
+![logo](https://github.com/omnirom/Docs/blob/master/images/omnirom_logo-big_layout_transparent-250px-150x150.png)
 # OmniROM blog
 ## Introduction
 The blog for Omni is setup using [Jekyll](https://jekyllrb.com/), allowing for quick and easy deployment of news for the Community. The below will give you the information you need to contribute to the Omni Community.
@@ -48,4 +47,4 @@ All posts need to be placed into the `_posts` folder and the file name following
 ```
 YYYY-MM-DD-title-of-post.MARKUP
 ```
-The file extension can be `.md` if you're doing a post using [Markdown](https://guides.github.com/features/mastering-markdown/) code, or `.html` if you decide to do an HTML post. 
+The file extension can be `.md` if you're doing a post using [Markdown](https://guides.github.com/features/mastering-markdown/) code, or `.html` if you decide to do an HTML post.
