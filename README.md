@@ -9,8 +9,10 @@ In order to begin contributing, you need to setup Ruby and Jekyll on your local 
 ```
 $ sudo apt-get install ruby bundler
 $ gem install jekyll
+$ sudo gem install bundler **you may need to do this with MacOS**
 $ sudo gem update
 ```
+For more information on setup, see the [Jekyll Install Guide](https://jekyllrb.com/docs/installation/).
 
 ### Fork and Clone the Blog
 In order to contribute you will need to create a fork to your own Github account and then clone that repo. The command to clone to your local machine would be something like (with <yourusername> replaced with your Github username):
