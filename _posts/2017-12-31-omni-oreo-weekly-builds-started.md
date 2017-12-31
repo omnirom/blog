@@ -13,7 +13,7 @@ author:
   display_name: samstone86
 ---
 
-**Happy new Year 2018**
+**Happy New Year 2018**
 
 As of today we are starting our weekly builds for Android O (8.1) with 3 devices.
 
