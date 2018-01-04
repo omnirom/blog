@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Oneplus 5T now available through weekly builds"
+title: "OnePlus 5T now available through weekly builds"
 date: 2018-01-07 06:00:00 -0500
-excerpt: "We now add the Oneplus 5T to our weekly builds!"
+excerpt: "OmniROM weekly builds for the OnePlus 5T are now available!"
 categories:
 - development
 tags:
@@ -13,14 +13,8 @@ author:
   display_name: samstone86
 ---
 
-**Weekly builds update**
+**Weekly Build Update**
 
-We now add the Oneplus 5T to our weekly builds!
+As of today, we are adding the OnePlus 5T to our weekly build list. With this addition, OmniROM is the first to provide a stable Android 8.1 build for the 5T! You can find the [new builds](http://dl.omnirom.org/oneplus5t/) on our download server.
 
-With adding the Oneplus 5T, OmniROM is the first who provides a stable Android 8.1 build for this device!!!
-
-And here is the link:
-
- - Oneplus 5 [[oneplus5t](http://dl.omnirom.org/oneplus5t/)]
-
-Thanks to darkobas we have now support 5 devices on Android 8.1!!!
+All thanks go to *darkobas* for this new addition to our Android 8.1 device list! 
