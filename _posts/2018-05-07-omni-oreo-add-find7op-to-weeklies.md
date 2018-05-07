@@ -23,3 +23,5 @@ As of today, we are adding OnePlus One to our weekly build list.
  - Download Link : [[find7op](http://dl.omnirom.org/find7op/)]
 
 The device bringup is based on AgentFabulous and LineageOS trees for find7op. Special thanks to Akshay Menon, Kshitij Gupta, Jake Weinstein, Max Weninger, Alexander Diewald, Philipp Vogel and all other great devs for their work and sources. 
+
+Further details about the ROM can be found in the respective [[XDA thread](https://forum.xda-developers.com/oneplus-one/development/rom-omnirom-8-1-t3787079)].
