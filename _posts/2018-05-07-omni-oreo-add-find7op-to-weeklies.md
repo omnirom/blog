@@ -9,6 +9,8 @@ tags:
 - omni
 - weeklies
 - news
+author:
+  display_name: Okeys
 ---
 
 
@@ -22,5 +24,3 @@ As of today, we are adding OnePlus One to our weekly build list.
 
 
 The device bringup is based on AgentFabulous and LineageOS trees for find7op. Special thanks to Akshay Menon, Kshitij Gupta, Jake Weinstein, Max Weninger, Alexander Diewald, Philipp Vogel and all other great devs for their work and sources. 
-
-All thanks go to *Okeys* for this new addition to our Android 8.1 device list!
